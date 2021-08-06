@@ -30,11 +30,12 @@ function ProjectCard({
       <header className="flex items-center justify-end">
         <p
           className={`px-3 py-1.5 font-semibold leading-3 tracking-wide rounded-full flex items-center w-auto text-xs 
-        ${status == "pending" && "bg-yellow-100 text-yellow-600"}
-        ${status == "In-Process" && "bg-blue-100 text-blue-600"}
-        ${status == "review" && "bg-purple-100 text-purple-600"}
-        ${status == "debug" && "bg-red-100 text-red-600"}
-        ${status == "completed" && "bg-green-100 text-green-600"}
+        ${status == "pending" && "bg-pink-600 text-pink-50"}
+        ${status == "In-Process" && "bg-blue-600 text-blue-50"}
+        ${status == "review" && "bg-purple-600 text-purple-50"}
+        ${status == "debug" && "bg-yellow-600 text-yellow-50"}
+        ${status == "overdue" && "bg-red-600 text-red-50"}
+        ${status == "completed" && "bg-green-600 text-green-50"}
         
         `}
         >

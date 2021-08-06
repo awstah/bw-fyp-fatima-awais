@@ -20,7 +20,7 @@ function Employs() {
 
   return (
     <Layout>
-      <div className="relative">
+      <div className="relative w-full h-full">
         <div className="">
           {model ? (
             <AddEmploy
@@ -62,9 +62,10 @@ function Employs() {
                     <th className="font-normal text-left pl-16">Status</th>
                   </tr>
                 </thead>
-                <tbody className="">
-                  {error && <p>error</p>}
+                <tbody className="w-full">
                   {loading && <ComponentLoading />}
+
+                  {error && <p>error</p>}
                   {value && (
                     <React.Fragment>
                       {value.docs.map((doc) => (

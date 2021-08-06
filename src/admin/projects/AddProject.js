@@ -112,6 +112,7 @@ function AddProject() {
                   <option value="review">Review</option>
                   <option value="debug">Debug</option>
                   <option value="completed">Completed</option>
+                  <option value="overdue">Overdue</option>
                 </select>
               </div>
               <div className="inputdiv">

@@ -26,7 +26,9 @@ function EditEmploy({ id, designation, status, joinDate, click, name }) {
     <div className="flex justify-center py-8 px-4 w-full  absolute right-0">
       <div className="md:w-4/6 rounded shadow-lg p-6  dark:bg-gray-800 bg-white">
         <h1 className="text-gray-600 font-bold text-lg">Edit Employs</h1>
-        <p className="capitalize text-xl font-semibold text-gray-400">{name}</p>
+        <p className="capitalize font-semibold text-gray-600 text-sm">
+          Employ Name: <span className="text-gray-500">{name}</span>
+        </p>
 
         <main className="my-3">
           <div className="grid grid-cols-3">

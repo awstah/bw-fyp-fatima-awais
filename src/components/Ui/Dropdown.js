@@ -13,9 +13,9 @@ const DropDown = () => {
     logOut();
   };
   return (
-    <div>
+    <div className="z-50">
       <div
-        className="flex items-center  text-gray-600 cursor-pointer relative hover:text-purple-800 group"
+        className="flex items-center relative  text-gray-100 cursor-pointer hover:text-gray-200 group"
         onClick={() => {
           setShow(!show);
         }}
@@ -25,7 +25,7 @@ const DropDown = () => {
       </div>
 
       {show && (
-        <div className="w-28 h-auto visible absolute right-5 mt-3 opacity-100 shadow bg-white transform transition ease-in-out duration-300 rounded-md flex p-1 z-50">
+        <div className="w-28 h-auto visible absolute right-5 xl:right-20 mt-3 opacity-100 shadow bg-white transform transition ease-in-out duration-300 rounded-md flex p-1 z-50">
           <ul className="w-full">
             <DropDownItems name="Profile" />
             <DropDownItems name="Setting" />

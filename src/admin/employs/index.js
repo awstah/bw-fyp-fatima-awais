@@ -20,6 +20,7 @@ function Employs() {
 
   return (
     <Layout>
+      <div>{loading && <ComponentLoading />}</div>
       <div className="relative w-full h-full">
         <div className="">
           {model ? (
@@ -63,8 +64,6 @@ function Employs() {
                   </tr>
                 </thead>
                 <tbody className="w-full">
-                  {loading && <ComponentLoading />}
-
                   {error && <p>error</p>}
                   {value && (
                     <React.Fragment>

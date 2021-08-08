@@ -24,7 +24,7 @@ function Sidebar() {
       <SidebarItems
         Icon={RiBuilding2Line}
         name="Departments"
-        path="/admin/departments"
+        path="/admin/Departments"
       />
       <SidebarItems Icon={RiChatSmile3Line} name="Chats" path="/chat" />
       <SidebarItems Icon={RiUser6Line} name="Profile" path="/profile" />

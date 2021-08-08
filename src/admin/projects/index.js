@@ -19,9 +19,9 @@ function Projects() {
 
   return (
     <Layout>
-      <div className="flex my-3 items-center justify-between">
+      <div className="flex my-4 items-center justify-between border-b border-gray-200 pb-4">
         <div className="flex items-center space-x-5">
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-wide leading-normal text-gray-600">
             Projects
           </p>
         </div>
@@ -40,7 +40,7 @@ function Projects() {
         {error && <strong>Error: {JSON.stringify(error)}</strong>}
         {loading && <ComponentLoading />}
         {value && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
             {value.docs.sort().map((doc) => (
               <React.Fragment key={doc.id}>
                 <ProjectCard {...doc.data()} id={doc.id} />

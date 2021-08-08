@@ -20,6 +20,8 @@ function Departments() {
   return (
     <Layout>
       <div className="relative">
+        <div>{loading && <ComponentLoading />}</div>
+
         <div className="">
           {model ? (
             <AddDepartment

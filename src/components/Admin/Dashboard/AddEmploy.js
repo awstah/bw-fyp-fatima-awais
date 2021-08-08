@@ -13,9 +13,9 @@ function AddEmploy({ click }) {
   });
 
   return (
-    <div className="w-full h-full bg-black bg-opacity-30 absolute flex items-center justify-center">
+    <div className="w-full h-full bg-black bg-opacity-30 absolute flex items-center justify-center z-50">
       <div className="bg-white p-5 flex flex-col space-y-4">
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl my-2 font-bold leading-normal text-gray-800  z-50">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl my-2 font-bold leading-normal text-gray-800  ">
           New Employ
         </p>
         <div className="flex items-center space-x-3">

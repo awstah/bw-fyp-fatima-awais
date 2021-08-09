@@ -46,7 +46,6 @@ function Deliverables(props) {
           </button>
         </div>
       </div>
-
       <table className="w-full whitespace-nowrap">
         <thead>
           <tr className="h-16 w-full text-sm leading-none text-gray-800">
@@ -58,7 +57,7 @@ function Deliverables(props) {
             <th className="font-normal text-left pl-16"></th>
           </tr>
         </thead>
-        <tbody className="w-full">
+        <tbody className="w-full relative">
           {value && (
             <React.Fragment>
               {value.docs.map((doc) => (
